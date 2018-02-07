@@ -1,0 +1,33 @@
+{
+	"name": "social-server",
+	"version": "0.1.0",
+	"main": "index.js",
+	"repository": "https://github.com/paramirez/social-server.git",
+	"author": "Pablo Ramirez <pabloandres2700@gmail.com>",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"lint": "esw -w ./src/**/*",
+		"dev": "env NODE_ENV=development babel-watch ./src/index.js"
+	},
+	"dependencies": {
+		"bcrypt": "^1.0.3",
+		"body-parser": "^1.18.2",
+		"cors": "^2.8.4",
+		"express": "^4.16.2",
+		"jsonwebtoken": "^8.1.1",
+		"mongoose": "^5.0.3",
+		"mongoose-sequence": "^4.0.1",
+		"morgan": "^1.9.0",
+		"socket.io": "^2.0.4",
+		"winston": "^2.4.0"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-preset-env": "^1.6.1",
+		"babel-preset-stage-3": "^6.24.1",
+		"babel-watch": "^2.0.7",
+		"eslint": "^4.17.0",
+		"eslint-watch": "^3.1.3"
+	}
+}
