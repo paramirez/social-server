@@ -13,6 +13,7 @@ mongoose
 	.catch(err => process.stdout.write(err + '\n'));
 
 const app = express();
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(routes);
