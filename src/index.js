@@ -16,9 +16,11 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use(routes);
 app.use(morgan('dev'));
+app.use(routes);
 
-app.listen(config.app.port, () => process.stdout.write(`Run in port: ${config.app.port} \n`));
+app.listen(config.app.port, () =>
+	process.stdout.write(`Run in port: ${config.app.port} \n`)
+);
 
 socketio.listen(300);

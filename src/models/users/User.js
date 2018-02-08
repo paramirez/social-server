@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import sequence from 'mongoose-sequence';
 import validator from 'mongoose-validator';
-import { nameValidator } from './validators/text.validator';
+import { nameValidator } from '../validators/text.validator';
 
 const Schema = mongoose.Schema;
 const AutoIncrement = sequence(mongoose);

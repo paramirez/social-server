@@ -5,11 +5,16 @@ function open(access = false) {
 	return access ? this.public : this.protected;
 }
 
-const user = {
+export const user = {
 	protected: commonProtection + '',
-	model: '',
 	public: commonPublic + '',
 	open
 };
 
-export { user };
+export const permission = {
+	protected: commonProtection + '-deleted -disabled',
+	public: commonPublic + '',
+	open
+};
+
+export default { user };
