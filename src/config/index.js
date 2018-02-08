@@ -4,7 +4,8 @@ const config = {
 			port: process.env.PORT || 3000
 		},
 		database: {
-			url: 'mongodb://localhost:27017/social'
+			url:
+				'mongodb://socialserver:socialserver@ds229468.mlab.com:29468/social-server'
 		}
 	},
 	production: {
