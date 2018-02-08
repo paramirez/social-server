@@ -17,4 +17,10 @@ export const permission = {
 	open
 };
 
+export const role = {
+	protected: commonProtection + '-deleted -disabled',
+	public: commonPublic + '',
+	open
+};
+
 export default { user };
